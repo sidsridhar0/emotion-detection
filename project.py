@@ -52,24 +52,24 @@ def main():
     X_tr, X_te, y_tr, y_te = train_test_split(X, y, test_size=0.1, random_state=seed, shuffle=True)
 
     #accuracy = 0.5142439737034331
-    nn1 = MLPClassifier(random_state = seed, hidden_layer_sizes = [64, 64], activation = 'relu', 
-                batch_size = 256, n_iter_no_change=100, max_iter=100, solver = 'sgd', learning_rate_init=rate).fit(X_tr, y_tr)
+    #nn1 = MLPClassifier(random_state = seed, hidden_layer_sizes = [64, 64], activation = 'relu', 
+    #            batch_size = 256, n_iter_no_change=100, max_iter=100, solver = 'sgd', learning_rate_init=rate).fit(X_tr, y_tr)
     
-    print('1:', nn1.score(X_te, y_te))
+    #print('1:', nn1.score(X_te, y_te))
 
-    #accuracy = 
-    nn2 = MLPClassifier(random_state = seed, hidden_layer_sizes = [350, 350], activation = 'relu', 
-                batch_size = 256, n_iter_no_change=100, max_iter=100, solver = 'sgd', learning_rate_init=rate).fit(X_tr, y_tr)
+    #accuracy = 0.5142439737034331
+    #nn2 = MLPClassifier(random_state = seed, hidden_layer_sizes = [350, 350], activation = 'relu', 
+    #            batch_size = 256, n_iter_no_change=100, max_iter=100, solver = 'sgd', learning_rate_init=rate).fit(X_tr, y_tr)
     
-    print('2:', nn2.score(X_te, y_te))
+    #print('2:', nn2.score(X_te, y_te))
 
-    #accuracy = 
+    #accuracy = 0.5142439737034331
     nn3 = MLPClassifier(random_state = seed, hidden_layer_sizes = [64, 64], activation = 'relu', 
                 batch_size = 128, n_iter_no_change=100, max_iter=100, solver = 'sgd', learning_rate_init=rate).fit(X_tr, y_tr)
     
     print('3:', nn3.score(X_te, y_te))
 
-    #accuracy = 
+    #accuracy = 0.5142439737034331
     nn4 = MLPClassifier(random_state = seed, hidden_layer_sizes = [256, 256], activation = 'relu', 
                 batch_size = 128, n_iter_no_change=100, max_iter=100, solver = 'sgd', learning_rate_init=rate).fit(X_tr, y_tr)
     
